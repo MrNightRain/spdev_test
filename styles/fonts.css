@@ -1,0 +1,70 @@
+a {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    text-decoration: none;
+    color: black;
+}
+
+
+a:active {
+    color: gray;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+}
+
+button {
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #282630;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 100px;
+}
+
+
+.preview>i {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.good-food>h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.dishes-box h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        line-height: normal;
+        font-size: 2.5rem;
+    }
+}

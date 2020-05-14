@@ -1,0 +1,164 @@
+.preview {
+    height: 100vh;
+    min-height: 400px;
+    margin-bottom: -5%;
+    position: relative;
+}
+
+.preview>i {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.image {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.image i {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.good-food {
+    position: absolute;
+    width: 420px;
+    height: 144px;
+    right: 12%;
+    top: 30%;
+}
+
+.good-food>p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #65636A;
+}
+
+
+.good-food>hr {
+    width: 70px;
+    background-color: #282630;
+    height: 2px;
+    margin: 10px 0px;
+}
+
+.good-food-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    margin: 10px 0px;
+}
+
+.beckground-ellips {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    background-image: url("../assets/backgound-ellips.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tomato-1 {
+    position: absolute;
+    display: block;
+    width: 12%;
+    height: 14%;
+    right: 30%;
+    bottom: 20%;
+    background: url("../assets/tomato1.png");
+}
+
+.tomato-2 {
+    position: absolute;
+    display: block;
+    width: 12%;
+    height: 18%;
+    right: 16%;
+    top: 21%;
+    background: url("../assets/tomato2.png");
+}
+
+.big-ellips {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: -5%;
+    z-index: -4;
+    background-image: url("../assets/big-ellips.svg");
+}
+
+
+.small-ellips {
+    position: absolute;
+    display: block;
+    width: 75%;
+    height: 75%;
+    left: 12%;
+    top: 8%;
+    z-index: -3;
+    background-image: url("../assets/small-ellips.svg");
+}
+
+.kkal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 8%;
+    height: 11%;
+    right: 37%;
+    top: 13%;
+    border-radius: 100%;
+    background: #FFDD63;
+}
+
+.preview-picture {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 12%;
+    transform: rotate(1.06deg);
+    background-image: url("../assets/picture1.png");
+}
+
+.social-media,
+.social-media a {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    position: absolute;
+    left: 2vw;
+    bottom: 15%;
+}
+
+.social-media img {
+    margin: auto;
+    min-height: 3vh;
+    margin: 2vh 0px;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 5%;
+    right: 2vw;
+    bottom: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+    .preview {
+        display: none;
+    }
+}

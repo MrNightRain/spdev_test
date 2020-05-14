@@ -1,0 +1,125 @@
+@import 'fonts.css';
+@import 'preview.css';
+@import 'dishes.css';
+@import 'why-we-reviews.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #282630;
+}
+
+.low-res-header {
+    display: none;
+}
+
+button {
+    background-color: #FEE382;
+    border-radius: 25px;
+    padding: 11px 16px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+}
+
+button:active {
+    background-color: rgb(209, 187, 109);
+}
+
+header,
+footer,
+.menu,
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header,
+footer {
+    width: 96%;
+    padding: 0px 2%;
+}
+
+
+
+
+.menu {
+    flex-direction: row;
+    width: 35%;
+}
+
+.menu-buttons>a {
+    margin: 3%;
+
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.menu-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+footer {
+    flex-direction: column;
+    background-color: #282630;
+}
+.footer-top {
+    width: inherit;
+}
+.footer-top .menu-buttons {
+    width: auto;
+}
+
+.footer-top .logo,
+.footer-top .menu-buttons>a {
+    color: #FAFAFA;
+}
+
+
+footer>p {
+    line-height: 100px;
+    color: #65636A;
+}
+
+footer>hr {
+    width: inherit;
+    color: #65636A;
+}
+
+@media screen and (max-width: 700px) {
+    .basic-header {
+        display: none;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .low-res-header {
+        display: flex;
+    }
+
+    .menu-buttons {
+        min-width: min-content;
+        width: auto;
+    }
+
+    footer>p {
+        line-height: 40px;
+        color: #65636A;
+    }
+}

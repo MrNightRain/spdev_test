@@ -1,0 +1,108 @@
+.why-we,
+.reasons,
+.reason,
+.reviews,
+.reviews-list,
+.review {
+    display: flex;
+    align-items: center;
+}
+
+.why-we,
+.reviews {
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: auto;
+    padding: 3vw 0px;
+}
+
+.why-we {
+    background-color: #FEE382;
+}
+
+.why-we hr,
+.reviews hr {
+    width: 40px;
+    background-color: #282630;
+    height: 1px;
+    margin: 10px 0px;
+}
+
+.why-we>div:first-child,
+.reviews>div:first-child {
+    display: block;
+    width: max-content;
+}
+
+.reasons,
+.reviews-list {
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.reason,
+.review {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reason {
+    max-width: 15%;
+}
+
+.review {
+    max-width: 26%;
+}
+
+.reason>*,
+.review>* {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pagin {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-between;
+    width: 8%;
+}
+
+.pagin>div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #DEDEDE;
+}
+
+.pagin>div:first-child {
+    background-color: #65636A;
+}
+
+
+@media screen and (max-width: 900px) {
+    .why-we, .reviews {
+        height: auto;
+        padding: 10px;
+    }
+    .reasons,
+    .reviews-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .reason {
+        max-width: 30%;
+    }
+    .review {
+        width: 60%;
+    }
+    .pagin {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .reason, .review {
+        max-width: 60%;
+    }
+
+}

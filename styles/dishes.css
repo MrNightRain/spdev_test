@@ -1,0 +1,167 @@
+/* головний бокс */
+.dishes-of-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #F5F5F5 0%, #F5F5F5 50%, white 50%, white 100%);
+    height: min-content;
+    padding: 2% 2vw;
+}
+
+.dishes-of-day>div:first-child {
+    display: none;
+}
+
+
+
+.dish-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ліва велика страва */
+.main-dish {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.main-dish i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 6%;
+    width: 20%;
+    height: 15%;
+    z-index: 0;
+    line-height: 0.5rem;
+    border-radius: 100%;
+    background: #FFDD63;
+}
+
+.main-dish * {
+    margin: 5px 0px;
+    text-align: center;
+}
+
+
+.main-dish img {
+    z-index: 1;
+    width: 80%;
+}
+
+.main-dish p {
+    width: 50%;
+}
+
+/* правий блок страв */
+.dishes-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+.dishes-box>div:first-child {
+    display: block;
+    width: max-content;
+    align-self: flex-start;
+    padding-left: 5%;
+}
+
+.dishes-box hr {
+    width: 40px;
+    background-color: #282630;
+    height: 1px;
+    margin: 10px 0px;
+}
+
+.dishes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dish {
+    height: 90%;
+    max-width: 32%;
+}
+
+.dish>*:not(img) {
+    margin-bottom: 5px;
+}
+
+.dish:nth-child(2) {
+    position: relative;
+    top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .dishes-of-day {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .dishes-of-day>div:first-child {
+        display: block;
+        text-align: center;
+        width: 70%;
+        padding: 3% 0px;
+    }
+
+    .main-dish {
+        width: 100%;
+    }
+
+    .main-dish i {
+        top: 5%;
+        left: 7%;
+        width: 15%;
+        height: 15%;
+    }
+
+    .main-dish p {
+        width: 80%;
+    }
+
+    .dishes-box {
+        width: 86%;
+    }
+
+    .dishes-box>div:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dishes-of-day{
+        margin-bottom: unset;
+    }
+    .dishes-list {
+        flex-direction: column;
+    }
+    .dish {
+        max-width: 100%;
+        height: auto;
+    }
+    .dish:nth-child(2) {
+    top: auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .main-dish i {
+        top: 5%;
+        left: 7%;
+        width: 15%;
+        height: 12%;
+    }
+}
